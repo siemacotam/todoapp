@@ -66,8 +66,8 @@ class App extends Component {
 
   render() { 
     return ( 
-      <div>
-        <h1>TO DO APP</h1>
+      <div className='wrap'>
+        <h1 contenteditable spellcheck="false"> To do list</h1>
         <AddTask add={this.addTask}/>
         <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus}/>
       </div>

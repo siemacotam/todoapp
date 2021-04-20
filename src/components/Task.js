@@ -13,8 +13,8 @@ const Task = (props) => {
        <div>
            <p>
                 <strong style={important ? style : null}>{text}</strong> - do <span>{date} </span>
-                <button onClick={() => props.change(id)}>zostało zrobione</button>
-                <button onClick={() => props.delete(id)}>x</button>
+                <button type="button" class="btn btn-warning" onClick={() => props.change(id)}>zostało zrobione</button>
+                <button type="button" class="btn-close" aria-label="Close" onClick={() => props.delete(id)}>x</button>
            </p>
        </div>
      );} else {
